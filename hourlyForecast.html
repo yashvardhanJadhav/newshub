@@ -1,0 +1,1078 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="html, css bootstrap, mega menu, navbar, large dropdown, menu CSS examples" />
+    <meta name="description" content="Bootstrap 5 navbar megamenu examples with simple css demo code" />
+
+    <title>NEWS HUB : WORLD SUB FOLDER</title>
+
+    <script src="https://kit.fontawesome.com/f3c49a086a.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bree+Serif&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <style type="text/css">
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        h5 {
+            font-family: 'Bree Serif', serif;
+            font-size: 23px;
+        }
+
+
+        body {
+            background-color: rgb(212, 212, 255);
+        }
+
+        .navbar .megamenu {
+            padding: 1rem;
+        }
+
+        .navbar li {
+            padding: 0 20px 0 0;
+        }
+
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+
+            .navbar .megamenu {
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin-top: 0;
+            }
+
+        }
+
+        .content1 {
+            padding-top: 130px;
+        }
+
+        #navbar {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .navHeadingSubHead {
+            padding-right: 120px;
+        }
+
+        .hourlyTimeChange>h4,
+        .hourlyTempChange>h4,
+        .hourlyTextChange>h4,
+        .hourlySpeedChange>h4 {
+
+            font-family: 'Bree Serif', serif;
+        }
+        #partHeadingChange1,#partHeadingChange2
+{
+    font-family: 'Bree Serif',serif;
+}
+        /* ============ desktop view .end// ============ */
+
+
+        /* ============ mobile view ============ */
+
+
+        /* ============ mobile view .end// ============ */
+        @media(min-width: 991px) {
+
+            #searchGlobalTopic1,
+            #searchGlobalBtn1 {
+                display: none;
+            }
+
+            #socialMediaIconForHide {
+                display: none;
+            }
+
+            .part1Change {
+                background-color: white;
+                border-radius: 10px;
+                border-top: 10px solid #001730;
+            }
+
+            .hourlyImgChange>img {
+                float: right;
+            }
+
+            .hourlyTextChange>h4 {
+                float: left;
+            }
+        }
+
+        @media(max-width: 991px) {
+            h6 {
+                font-family: 'Bree Serif', serif;
+                font-size: 20px;
+
+            }
+
+            .navbar.fixed-top .navbar-collapse,
+            .navbar.sticky-top .navbar-collapse {
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top: 10px;
+            }
+
+            .navSocialIcon {
+                display: none;
+            }
+
+            #searchGlobalTopic,
+            #searchGlobalBtn {
+                display: none;
+            }
+
+            .navHeadingSubHead {
+                margin: auto;
+                padding-right: 0;
+            }
+
+            #navContainerForLogo {
+                padding: 0 0 0 0;
+            }
+
+            .navTitle {
+                margin: auto;
+            }
+
+            #navSecondForSubMenu {
+                padding: 0 0 0 0;
+
+            }
+
+            .nav-item {
+                margin: auto;
+            }
+
+            .nav-link {
+                padding: 0 5 0 0;
+
+            }
+
+            .navbar li {
+                padding: 0 0 0 0;
+            }
+
+            .nav-link .show {
+                margin: auto;
+            }
+
+            .content1 {
+                padding-top: 100px;
+            }
+
+            .part1Change {
+                background-color: white;
+                border-right: 12px solid rgb(212, 212, 255);
+                border-left: 12px solid rgb(212, 212, 255);
+                border-top: 10px solid #001730;
+            }
+
+            #contentHeading {
+                text-align: center;
+            }
+
+            #contentHeading>h1 {
+                font-family: 'Bree Serif', serif;
+                font-size: 23px;
+            }
+
+            #contentHeading>h3 {
+                font-family: 'Bree Serif', serif;
+                font-size: 17px;
+            }
+
+            .partRowChange>* {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .part2PaddingTemp {
+                padding-left: 10px;
+            }
+
+            .hourlySymbolDown {
+                font-size: 10px;
+            }
+
+            /* 
+            .container {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .row>* {
+                padding-right: 0;
+                padding-left: 0;
+            } */
+            .part1Change,
+            .part12Change {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .hourlyTimeChange,
+            .hourlyTempChange,
+            .hourlyTextChange,
+            .hourlySpeedChange {
+                text-align: center;
+            }
+
+
+            .hourlyTimeChange>h4,
+            .hourlyTempChange>h4,
+            .hourlyTextChange>h4,
+            .hourlySpeedChange>h4 {
+
+                margin: auto;
+                font-family: 'Bree Serif', serif;
+                font-size: 17px;
+            }
+
+        }
+
+        li {
+            color: black;
+        }
+
+        .list-unstyled a:hover {
+            border-bottom: 2px solid black;
+            font-weight: 500;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            font-weight: bold;
+
+        }
+
+        .nav-link:after {
+            background: none repeat scroll 0 0 transparent;
+            content: "";
+            display: block;
+            height: 2px;
+            position: absolute;
+            background: black;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+            left: 50%;
+
+
+        }
+
+        .nav-link:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        .list-unstyled a {
+            color: #001730;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .columnBorder {
+            border-right: 2px solid rgb(188, 188, 188);
+
+        }
+
+        .navbar-brand {
+            padding-bottom: 0;
+        }
+
+        #navbar1 {
+            z-index: 1;
+            position: fixed;
+            transition: top 0.3s;
+            width: 100%;
+        }
+
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        #contentHeading {
+            border-bottom: 2px solid rgb(225, 225, 225);
+
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        footer a:hover {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        a:focus {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .form-control {
+            background: #212529;
+            border-color: #545454;
+        }
+
+        .form-control:focus {
+            background: #212529;
+        }
+
+        footer {
+            background: #212529;
+        }
+
+        .active a {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar1").style.top = "0";
+            } else {
+                document.getElementById("navbar1").style.top = "-135px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+
+
+
+    </script>
+</head>
+
+
+
+<body>
+    <div id="navbar1">
+        <nav class="navbar navbar-light" style="border-bottom: 2px solid white; background-color: #001730;">
+            <div class="container-fluid" id="navContainerForLogo">
+                <a class="navbar-brand navSocialIcon" style="padding:0 0 0 0;" href="https://www.instagram.com">
+                    <img src="img/instagram.jpg" alt="" width="20" height="20">
+                </a><a class="navbar-brand navSocialIcon" style="padding:0 0 0 0;" href="https://www.facebook.com">
+                    <img src="img/facebook.jpg" alt="" width="20" height="20">
+                </a><a class="navbar-brand navSocialIcon" style="padding:0 0 0 0;" href="https://www.twitter.com">
+                    <img src="img/twitter.jpg" alt="" width="20" height="20">
+                </a>
+
+                <a class="navbar-brand" href="esehi.html"
+                    style="color:black;margin:auto; font-family: 'Archivo Black', sans-serif;">
+                    <h1 style="margin-bottom: 0;color:#4AD7D1" class="navTitle">NEWS HUB</h1>
+                </a>
+
+
+                <form class="d-flex">
+                    <input class="form-control me-2" id="searchGlobalTopic" type="search" placeholder="Search Topics"
+                        aria-label="Search" style="background-color: white; width: 150px;">
+                    <button type="button" class="btn btn-outline-success" id="searchGlobalBtn"
+                        onclick="window.location.href = 'forSearchBasicLayout.html';">Search</button>
+                </form>
+            </div>
+            <div class="navHeadingSubHead" style="margin:auto; font-size: 13px; color:#4AD7D1;">News blogs and
+                Magazines
+            </div>
+        </nav>
+        <!-- ============= COMPONENT ============== -->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar"
+            style="border-bottom: 2px solid #001730; background-color: #4AD7D1;">
+            <div class="container-fluid" id="navSecondForSubMenu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fas fa-bars" style="color: #001730;"></i>
+                    </span>
+                </button>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fas fa-search" style="color: #001730;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav" style="margin:auto;">
+                        <form class="d-flex mx-2">
+                            <!--  -->
+                            <input class="form-control me-2" id="searchGlobalTopic1" type="search"
+                                placeholder="Search Topics" aria-label="Search" style="background-color: white; "
+                                size="13">
+                            <button type="button" class="btn btn-outline-success" id="searchGlobalBtn1"
+                                onclick="window.location.href = 'forSearchBasicLayout.html';">Search</button>
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link" href="esehi.html" style="color:#001730">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="latest.html" style="color:#001730">Latest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="covid-19.html" style="color:#001730">COVID-19</a>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" style="color:#001730"
+                                id="indiaDropdownMegaMenu">India <span style="font-size: xx-small;">▼</span></a>
+                            <div class="dropdown-menu megamenu" role="menu" style="background-color: #CAE7DF;">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6 columnBorder">
+                                        <div class="col-megamenu">
+                                            <h7 class="title"><b>Daily News</b></h7>
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiageneral"
+                                                        onclick="navFunc(this.id)">General</a></li>
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiascience"
+                                                        onclick="navFunc(this.id)">Science</a></li>
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiabusiness"
+                                                        onclick="navFunc(this.id)">Business</a></li>
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiasports"
+                                                        onclick="navFunc(this.id)">Sports</a></li>
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiahealth"
+                                                        onclick="navFunc(this.id)">Health</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6" style="padding-left: 20px;">
+                                        <div class="col-megamenu">
+                                            <h7 class="title"><b>States</b></h7>
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMaharashtra"
+                                                        onclick="navFunc(this.id)">Maharashtra</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDelhi"
+                                                        onclick="navFunc(this.id)">Delhi</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaKarnataka"
+                                                        onclick="navFunc(this.id)">Karnataka</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaTamil-Nadu"
+                                                        onclick="navFunc(this.id)">Tamil Nadu</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaTelangana"
+                                                        onclick="navFunc(this.id)">Telangana</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaUttar-Pradesh"
+                                                        onclick="navFunc(this.id)">Uttar Pradesh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaWest-Bengal"
+                                                        onclick="navFunc(this.id)">West Bengal</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaGujarat"
+                                                        onclick="navFunc(this.id)">Gujarat</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMadhya-Pradesh"
+                                                        onclick="navFunc(this.id)">Madhya Pradesh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaBihar"
+                                                        onclick="navFunc(this.id)">Bihar</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaChandigarh"
+                                                        onclick="navFunc(this.id)">Chandigarh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaRajasthan"
+                                                        onclick="navFunc(this.id)">Rajasthan</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h7 class="title"><b>States</b></h7>
+                                            <ul class="list-unstyled">
+
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAsssam"
+                                                        onclick="navFunc(this.id)">Assam</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaChattisgarh"
+                                                        onclick="navFunc(this.id)">Chattisgarh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaGoa"
+                                                        onclick="navFunc(this.id)">Goa</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaHaryana"
+                                                        onclick="navFunc(this.id)">Haryana</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaHimachal-Pradesh"
+                                                        onclick="navFunc(this.id)">Himachal Pradesh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJammu-Kashmir"
+                                                        onclick="navFunc(this.id)">Jammu Kashmir</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJharkhand"
+                                                        onclick="navFunc(this.id)">Jharkhand</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaKerala"
+                                                        onclick="navFunc(this.id)">Kerala</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaManipur"
+                                                        onclick="navFunc(this.id)">Manipur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMeghalaya"
+                                                        onclick="navFunc(this.id)">Meghalaya</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMizoram"
+                                                        onclick="navFunc(this.id)">Mizoram</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaArunachal-Pradesh"
+                                                        onclick="navFunc(this.id)">Arunachal Pradesh</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h7 class="title"><b>States</b></h7>
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaNagaland"
+                                                        onclick="navFunc(this.id)">Nagaland</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaOdisha"
+                                                        onclick="navFunc(this.id)">Odisha</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaPunjab"
+                                                        onclick="navFunc(this.id)">Punjab</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaSikkim"
+                                                        onclick="navFunc(this.id)">Sikkim</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaTripura"
+                                                        onclick="navFunc(this.id)">Tripura</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaUttarakhand"
+                                                        onclick="navFunc(this.id)">Uttarakhand</a></li>
+                                                <li><a href="indiaSubFolderState.html"
+                                                        id="navIndiaAndaman-and-Nikobar-Islands"
+                                                        onclick="navFunc(this.id)">Andaman and Nikobar Islands</a>
+                                                </li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDadra-Nagra-Haveli"
+                                                        onclick="navFunc(this.id)">Dadra Nagra Haveli</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDaman-Diu"
+                                                        onclick="navFunc(this.id)">Daman Diu</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaLakshwadweep"
+                                                        onclick="navFunc(this.id)">Lakshwadweep</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaPondicherry"
+                                                        onclick="navFunc(this.id)">Pondicherry</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAndhra-Pradesh"
+                                                        onclick="navFunc(this.id)">Andhra Pradesh</a></li>
+
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" style="color:#001730">
+                                Cities <span style="font-size: xx-small;">▼</span></a>
+                            <div class="dropdown-menu megamenu" style="background-color: #CAE7DF;" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6 columnBorder">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMumbai"
+                                                        onclick="navFunc(this.id)">Mumbai</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDelhi"
+                                                        onclick="navFunc(this.id)">Delhi</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaBengaluru"
+                                                        onclick="navFunc(this.id)">Bengaluru</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaHydrebad"
+                                                        onclick="navFunc(this.id)">Hydrebad</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaKolkata"
+                                                        onclick="navFunc(this.id)">Kolkata</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaChennai"
+                                                        onclick="navFunc(this.id)">Chennai</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAgra"
+                                                        onclick="navFunc(this.id)">Agra</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAhmedabad"
+                                                        onclick="navFunc(this.id)">Ahmedabad</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAjmer"
+                                                        onclick="navFunc(this.id)">Ajmer</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6 columnBorder" style="padding-left: 20px;">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAurangabad"
+                                                        onclick="navFunc(this.id)">Aurangabad</a></li>
+
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaBareilly"
+                                                        onclick="navFunc(this.id)">Bareilly</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndia"
+                                                        onclick="navFunc(this.id)">Bhubandshwar</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaBhopal"
+                                                        onclick="navFunc(this.id)">Bhopal</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndia"
+                                                        onclick="navFunc(this.id)">Chandigarh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDehradun"
+                                                        onclick="navFunc(this.id)">Dehradun</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaFaridabad"
+                                                        onclick="navFunc(this.id)">Faridabad</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaGhaziabad"
+                                                        onclick="navFunc(this.id)">Ghaziabad</a></li>
+                                                <li><a href="indiaSubFolderState.html"
+                                                        id="navIndiaGuwahati">Guwahati</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6 columnBorder" style="padding-left: 20px;">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaIndore"
+                                                        onclick="navFunc(this.id)">Indore</a></li>
+
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJaipur"
+                                                        onclick="navFunc(this.id)">Jaipur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJammu"
+                                                        onclick="navFunc(this.id)">Jammu</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJodhpur"
+                                                        onclick="navFunc(this.id)">Jodhpur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaKanpur"
+                                                        onclick="navFunc(this.id)">Kanpur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMeerut"
+                                                        onclick="navFunc(this.id)">Meerut</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaNagpur"
+                                                        onclick="navFunc(this.id)">Nagpur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndia"
+                                                        onclick="navFunc(this.id)">Puducherry</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaPune"
+                                                        onclick="navFunc(this.id)">Pune</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div>
+                                    <div class="col-lg-3 col-6" style="padding-left: 20px;">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaRajkot"
+                                                        onclick="navFunc(this.id)">Rajkot</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaShrinagar"
+                                                        onclick="navFunc(this.id)">Shrinagar</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaSurat"
+                                                        onclick="navFunc(this.id)">Surat</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaShimla"
+                                                        onclick="navFunc(this.id)">Shimla</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndia"
+                                                        onclick="navFunc(this.id)">Thirvananthapuram</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaUdaipur"
+                                                        onclick="navFunc(this.id)">Udaipur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaVaranasi"
+                                                        onclick="navFunc(this.id)">Varanasi</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaVishakhapatnam"
+                                                        onclick="navFunc(this.id)">Vishakhapatnam</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:#001730">World <span
+                                    style="font-size: xx-small;">▼</span>
+                            </a>
+                            <ul class="dropdown-menu list-unstyled" aria-labelledby="navbarDropdownMenuLink"
+                                style="padding-left: 10px; background-color: #CAE7DF;">
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiaDaman-Diu"
+                                        onclick="navFunc(this.id)">World</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiausUnited-States"
+                                        onclick="navFunc(this.id)">United States</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiapkPakistan"
+                                        onclick="navFunc(this.id)">Pakistan</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiainIndia"
+                                        onclick="navFunc(this.id)">India</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiatwChina"
+                                        onclick="navFunc(this.id)">China</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiajpJapan"
+                                        onclick="navFunc(this.id)">Japan</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiadeGermany"
+                                        onclick="navFunc(this.id)">Germany</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiaauAustralia"
+                                        onclick="navFunc(this.id)">Australia</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzNew-Zealand"
+                                        onclick="navFunc(this.id)">New Zealand</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzSpain"
+                                        onclick="navFunc(this.id)">Spain</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzTurkey"
+                                        onclick="navFunc(this.id)">Turkey</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzItaly"
+                                        onclick="navFunc(this.id)">Italy</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzUnited-Kingdom"
+                                        onclick="navFunc(this.id)">United Kingdom</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzBelguim"
+                                        onclick="navFunc(this.id)">Belguim</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="business.html" style="color:#001730">Business </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cricket.html" style="color:#001730"> Cricket</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:#001730">Sports <span
+                                    style="font-size: xx-small;">▼</span>
+                            </a>
+                            <ul class="dropdown-menu list-unstyled" aria-labelledby="navbarDropdownMenuLink"
+                                style="padding-left: 10px; background-color: #CAE7DF;">
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaIPL" onclick="navFunc(this.id)">IPL</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaFootball"
+                                        onclick="navFunc(this.id)">Football</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaBadminton"
+                                        onclick="navFunc(this.id)">Badminton</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaHockey"
+                                        onclick="navFunc(this.id)">Hockey</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaTennis"
+                                        onclick="navFunc(this.id)">Tennis</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaRacing"
+                                        onclick="navFunc(this.id)">Racing</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaAtheletics"
+                                        onclick="navFunc(this.id)">Atheletics</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaVolleyball"
+                                        onclick="navFunc(this.id)">Volleyball</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaChess"
+                                        onclick="navFunc(this.id)">Chess</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaWWE" onclick="navFunc(this.id)">WWE</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaBoxing"
+                                        onclick="navFunc(this.id)">Boxing</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaGolf" onclick="navFunc(this.id)">Golf</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaSnooker"
+                                        onclick="navFunc(this.id)">Snooker</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaWrestling"
+                                        onclick="navFunc(this.id)">Wrestling</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="crypto.html" style="color:#001730">Crypto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:#001730">Entertainment
+                                <span style="font-size: xx-small;">▼</span>
+                            </a>
+                            <ul class="list-unstyled dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+                                style="padding-left: 10px; background-color: #CAE7DF;">
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzBollywood"
+                                        onclick="navFunc(this.id)">Bollywood</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzHollywood"
+                                        onclick="navFunc(this.id)">Hollywood</a>
+                                </li>
+
+                            </ul>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="technology.html" style="color:#001730">Technology </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="weather.html" style="color:#001730">Weather</a>
+                        </li>
+                        <li class="nav-item" id="socialMediaIconForHide">
+                            <a class="nav-link navbar-brand navSocialIcon" style="padding:0 0 0 0;"
+                                href="https://www.instagram.com">
+                                <img src="img/instagram1.jpg" alt="" width="20" height="20">
+                            </a><a class="nav-link navbar-brand navSocialIcon" style="padding:0 0 0 0;"
+                                href="https://www.facebook.com">
+                                <img src="img/facebook1.jpg" alt="" width="20" height="20">
+                            </a><a class="nav-link navbar-brand navSocialIcon" style="padding:0 0 0 0;"
+                                href="https://www.twitter.com">
+                                <img src="img/twitter1.jpg" alt="" width="20" height="20">
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div> <!-- navbar-collapse.// -->
+
+            </div> <!-- container-fluid.// -->
+        </nav>
+    </div>
+    <div class="content1">
+        <div class="container my-4 part1Change">
+            <div class="container my-4 part12Change">
+                <div class="my-4 mx-4" id="contentHeading">
+                    <!-- <h1>Hourly Forecast - place</h1>
+            <h3>Wednesday, 24 November</h3> -->
+                </div>
+                <div class="content my-4 mx-4" id="contentForHours">
+                    <!-- <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample"
+                    style="width: 100%; border-bottom: 2px solid grey;">
+                    <div class="row">
+                        <div class="col">
+                            <h3>time</h3>
+                        </div>
+                        <div class="col">
+                            <h3>temperature</h3>
+                        </div>
+                        <div class="col-6">
+                            <h3>Text and Icon</h3>
+                        </div>
+                        <div class="col">
+                            <h3>speed</h3>
+
+                        </div>
+                        <div class="col">
+                            <h3>expand</h3>
+
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                        when the user activates the relevant trigger.
+                    </div>
+                </div> -->
+
+                </div>
+            </div>
+        </div>
+        <footer class="w-100 py-4 flex-shrink-0">
+            <div class="container py-4">
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-4 col-md-6">
+                        <a class="navbar-brand" href="esehi.html"
+                            style="color:white;margin:auto; font-family: 'Archivo Black', sans-serif;">
+                            <h1 style="margin-bottom: 0;">NEWS HUB</h1>
+                        </a>
+                        <p class="small text-muted">News blogs and Magazines</p>
+                        <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
+                                href="esehi.html">newshub.com</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">Popular Categories</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="politics.html" style="color: #545454;">Politics</a></li>
+                            <li><a href="sports.html" style="color: #545454;">Sports</a></li>
+                            <li><a href="latest.html" style="color: #545454;">Latest</a></li>
+                            <li><a href="technology.html" style="color: #545454;">Technology</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">Popular Topics</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="top-trending.html" style="color: #545454;">Top-trending</a></li>
+                            <li><a href="covid-19.html" style="color: #545454;">COVID-19</a></li>
+                            <li><a href="entertainment.html" style="color: #545454;">Entertainment</a></li>
+                            <li><a href="india.html" style="color: #545454;">India</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">News Hub</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="esehi.html" style="color: #545454;">Home</a></li>
+                            <li><a href="contactUs.html" style="color: #545454;">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="text-white mb-3">Connect</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="https://www.facebook.com" style="color: #545454;">Facebook</a></li>
+                            <li><a href="https://www.twitter.com" style="color: #545454;">Twitter</a></li>
+                            <li><a href="https://www.instagram.com" style="color: #545454;">Instagram</a></li>
+                            <li><a href="https://www.reddit.com" style="color: #545454;">Reddit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        })
+    });
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar1").style.top = "0";
+        } else {
+            document.getElementById("navbar1").style.top = "-135px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+    const apiKey = `KFVYDzriESTC91NNkXPw1vCdv27nhk9Z`;
+    let cityKey = localStorage.getItem('cityKey');
+    let dateTime = localStorage.getItem('date');
+    let currentDateSimple = dateTime.substring(0, 10);
+    let currentTimeSimple = dateTime.substring(11, 19);
+    let contentForHours = document.getElementById('contentForHours');
+    const xhrHeading = new XMLHttpRequest();
+    xhrHeading.open('GET', `http://dataservice.accuweather.com/locations/v1/${cityKey}?apikey=${apiKey}`, true);
+    xhrHeading.onload = function () {
+        let headingObj = JSON.parse(this.responseText);
+        let cityName = headingObj.EnglishName;
+        let contentHeading = document.getElementById('contentHeading');
+
+        let headingHtml = `
+                    <h1 id="partHeadingChange1">Hourly Forecast - ${cityName}</h1>
+                    <h3 id="partHeadingChange2">As of ${currentDateSimple} IST</h3>
+        `;
+        contentHeading.innerHTML = headingHtml;
+    }
+    xhrHeading.send();
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${cityKey}?apikey=${apiKey}&details=true`, true);
+    xhr.onload = function () {
+
+        let hourlyObj = JSON.parse(this.responseText);
+
+        let hourlyHtml = ``;
+        for (let i = 0; i < 12; i++) {
+            let time = hourlyObj[i].DateTime;
+            time = time.substring(11, 16);
+            let temp = hourlyObj[i].Temperature.Value;
+            temp = Math.floor((temp - 32) * (5 / 9));
+            let iconPhrase = hourlyObj[i].IconPhrase;
+            let icon = hourlyObj[i].WeatherIcon;
+            let humidity = hourlyObj[i].RelativeHumidity;
+            let UVIndex = hourlyObj[i].UVIndex;
+            let speed = hourlyObj[i].Wind.Speed.Value;
+            speed = speed * 1.60934;
+            speed = Math.round(speed * 10) / 10;
+            hourlyHtml += `
+                <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseExample${i}" role="button"
+                    aria-expanded="false" aria-controls="collapseExample"
+                    style="width: 100%; border:none; border-bottom: 2px solid grey; background-color:white;">
+                    <div class="row partRowChange">
+                        <div class="col hourlyTimeChange">
+                            <h4>${time}</h4>
+                        </div>
+                        <div class="col hourlyTempChange part2PaddingTemp">
+                            <h4>${temp}°C</h4>
+                        </div>
+                        <div class="col-6">
+                            <div class="row partRowChange">
+                            <div class="col-md-4 hourlyImgChange"><img src="icons/${icon}.svg" width="40px"></div>
+                            <div class="col-md-8 hourlyTextChange"><h4>${iconPhrase}</h4></div>
+                            </div>
+                        </div>
+                        <div class="col hourlySpeedChange">
+                            <h4>${speed} km/h</h4>
+
+                        </div>
+                        <div class="col hourlySymbolDown">
+                            <h5>▼</h5>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="collapseExample${i}">
+                    <div class="card card-body" style="background-color:rgb(212, 212, 255);">
+                        <div class="row partRowChange">
+                            <div class="col">
+                                <div style="text-align:center; font-family:'Bree Serif',serif">Feels like</div>
+                                <div><h4 style="text-align:center; font-family:'Bree Serif',serif">${temp}</h4></div>
+                            </div>
+                            <div class="col">
+                                <div style="text-align:center;font-family:'Bree Serif',serif">Wind</div>
+                                <div><h4 style="text-align:center;font-family:'Bree Serif',serif">${speed}</h4></div>
+                            </div>
+                            <div class="col">
+                                <div style="text-align:center;font-family:'Bree Serif',serif">Humidity</div>
+                                <div><h4 style="text-align:center;font-family:'Bree Serif',serif">${humidity}</h4></div>    
+                            </div>
+                            <div class="col">
+                                <div style="text-align:center;font-family:'Bree Serif',serif">UV Index</div>
+                                <div><h4 style="text-align:center;font-family:'Bree Serif',serif">${UVIndex}</h4></div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                `;
+        }
+        contentForHours.innerHTML = hourlyHtml;
+    }
+    xhr.send();
+    let searchGlobalTopic = document.getElementById('searchGlobalTopic');
+    let searchGlobalBtn = document.getElementById('searchGlobalBtn');
+    searchGlobalBtn.addEventListener('click', searchGlobalFunction);
+    function searchGlobalFunction() {
+        let globalSearchText = searchGlobalTopic.value.toLowerCase();
+        localStorage.setItem('globalSearchText', globalSearchText);
+        console.log(globalSearchText);
+    }
+</script>
+
+</html>

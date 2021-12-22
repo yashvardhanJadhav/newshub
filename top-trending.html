@@ -1,0 +1,2076 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="html, css bootstrap, mega menu, navbar, large dropdown, menu CSS examples" />
+    <meta name="description" content="Bootstrap 5 navbar megamenu examples with simple css demo code" />
+
+    <title>NEWS HUB : WORLD SUB FOLDER</title>
+
+    <script src="https://kit.fontawesome.com/f3c49a086a.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bree+Serif&family=Secular+One&display=swap"
+        rel="stylesheet">
+
+    <style type="text/css">
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        h5 {
+            font-family: 'Bree Serif', serif;
+            font-size: 23px;
+        }
+
+
+
+        body {
+            background-color: rgb(212, 212, 255);
+        }
+
+        .navbar .megamenu {
+            padding: 1rem;
+        }
+
+        .navbar li {
+            padding: 0 20px 0 0;
+        }
+
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+
+            .navbar .megamenu {
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin-top: 0;
+            }
+
+        }
+
+        .content {
+            padding-top: 130px;
+        }
+
+        #navbar {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .card-text {
+            font-size: 15px;
+        }
+
+        #newsContainerleft1IdSize,
+        #newsContainerleft1IdcardSize {
+            height: 355px;
+        }
+
+        /* ============ desktop view .end// ============ */
+
+
+        /* ============ mobile view ============ */
+        .navHeadingSubHead {
+            padding-right: 120px;
+        }
+
+        #newsContainerleft1Id {
+            height: 315px;
+        }
+
+        #newsContainerleft1IdcardSizeImg {
+            width: 100%;
+            height: 250px;
+        }
+
+        @media(min-width: 991px) {
+
+            #searchGlobalTopic1,
+            #searchGlobalBtn1 {
+                display: none;
+            }
+
+            #newsConainer1 {
+                display: none;
+
+            }
+
+            #newsContainer1 {
+                display: none;
+            }
+
+            #socialMediaIconForHide {
+                display: none;
+            }
+        }
+
+        @media(max-width: 1300px) {
+            .newsLeft2Descr {
+                display: none;
+            }
+        }
+
+        @media(max-width: 991px) {
+            h6 {
+                font-family: 'Bree Serif', serif;
+                font-size: 10px;
+
+            }
+
+            .navbar.fixed-top .navbar-collapse,
+            .navbar.sticky-top .navbar-collapse {
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top: 10px;
+            }
+
+            .navSocialIcon {
+                display: none;
+            }
+
+            #searchGlobalTopic,
+            #searchGlobalBtn {
+                display: none;
+            }
+
+            .navHeadingSubHead {
+                margin: auto;
+                padding-right: 0;
+            }
+
+            #navContainerForLogo {
+                padding: 0 0 0 0;
+            }
+
+            .navTitle {
+                margin: auto;
+            }
+
+            #navSecondForSubMenu {
+                padding: 0 0 0 0;
+            }
+
+            .nav-item {
+                margin: auto;
+            }
+
+            .nav-link {
+                padding: 0 5 0 0;
+
+            }
+
+            .navbar li {
+                padding: 0 0 0 0;
+            }
+
+            .nav-link .show {
+                margin: auto;
+            }
+
+            .content {
+                padding-top: 100px;
+            }
+
+            #newsContainerleft1Id2 {
+                display: none;
+            }
+
+            #newsContainer {
+                display: none;
+                ;
+            }
+
+            #cardTitleLeft1,
+            h5 {
+                font-size: 12px;
+                font-family: 'Bree Serif', serif;
+
+            }
+
+            .rightAll {
+                font-size: 8px;
+
+            }
+
+            #newsContainerleft1IdSize,
+            #newsContainerleft1IdcardSize {
+                height: 250px;
+            }
+
+            #containerLink {
+                color: black;
+                text-decoration: none;
+            }
+
+            #newsContainerleft1IdcardSizeImg {
+                height: 180px;
+            }
+
+            /*
+                    #midCardWidth{
+                        height: 120px;
+                    }  */
+        }
+        li{
+            color:black;
+        }
+
+        /* ============ mobile view .end// ============ */
+
+
+        .list-unstyled a:hover {
+            border-bottom: 2px solid black;
+            font-weight: 500;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .nav-link:after {
+            background: none repeat scroll 0 0 transparent;
+            content: "";
+            display: block;
+            height: 2px;
+            position: absolute;
+            background: #001730;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+            left: 50%;
+        }
+
+        .nav-link:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        .list-unstyled a {
+            color: #001730;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .columnBorder {
+            border-right: 2px solid rgb(188, 188, 188);
+
+        }
+
+        .navbar-brand {
+            padding-bottom: 0;
+        }
+
+        .midCard {
+            border-bottom: none;
+            border-radius: 0;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            height: 180px;
+            margin-bottom: 0px;
+            font-size: smaller;
+            overflow: hidden;
+
+        }
+
+        .midCard img:hover {
+            transform: scale(1.15);
+            overflow: hidden;
+        }
+
+        .midCard img {
+            height: 180px;
+            width: 100%;
+            border: 2px solid rgb(227, 227, 227);
+
+        }
+
+        .upImage-top-left {
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            color: white;
+        }
+
+        #navbar1 {
+            z-index: 1;
+            position: fixed;
+            transition: top 0.3s;
+            width: 100%;
+        }
+
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+
+        .card-body p,
+        h5 {
+            color: black
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        footer a:hover {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        a:focus {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .form-control {
+            background: #212529;
+            border-color: #545454;
+        }
+
+        .form-control:focus {
+            background: #212529;
+        }
+
+        footer {
+            background: #212529;
+        }
+
+        .active a {
+            text-decoration: underline;
+        }
+
+        .upImage-bottom-right {
+            position: absolute;
+            top: 100%;
+            left: px;
+            color: white;
+        }
+
+        #pagePrev {
+            pointer-events: none;
+            color: grey;
+        }
+
+        .list-group-item:hover,
+        .list-group-item:focus {
+            z-index: 0;
+        }
+    </style>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar1").style.top = "0";
+            } else {
+                document.getElementById("navbar1").style.top = "-135px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <div id="navbar1">
+        <nav class="navbar navbar-light" style="border-bottom: 2px solid white; background-color: #001730;">
+            <div class="container-fluid" id="navContainerForLogo">
+                <a class="navbar-brand navSocialIcon" style="padding:0 0 0 0;" href="https://www.instagram.com">
+                    <img src="img/instagram.jpg" alt="" width="20" height="20">
+                </a><a class="navbar-brand navSocialIcon" style="padding:0 0 0 0;" href="https://www.facebook.com">
+                    <img src="img/facebook.jpg" alt="" width="20" height="20">
+                </a><a class="navbar-brand navSocialIcon" style="padding:0 0 0 0;" href="https://www.twitter.com">
+                    <img src="img/twitter.jpg" alt="" width="20" height="20">
+                </a>
+
+                <a class="navbar-brand" href="esehi.html"
+                    style="color:black;margin:auto; font-family: 'Archivo Black', sans-serif;">
+                    <h1 style="margin-bottom: 0;color:#4AD7D1" class="navTitle">NEWS HUB</h1>
+                </a>
+
+
+                <form class="d-flex">
+                    <input class="form-control me-2" id="searchGlobalTopic" type="search" placeholder="Search Topics"
+                        aria-label="Search" style="background-color: white; width: 150px;">
+                    <button type="button" class="btn btn-outline-success" id="searchGlobalBtn"
+                        onclick="window.location.href = 'forSearchBasicLayout.html';">Search</button>
+                </form>
+            </div>
+            <div class="navHeadingSubHead" style="margin:auto; font-size: 13px; color:#4AD7D1;">News blogs and Magazines
+            </div>
+        </nav>
+        <!-- ============= COMPONENT ============== -->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar"
+            style="border-bottom: 2px solid #001730; background-color: #4AD7D1;">
+            <div class="container-fluid" id="navSecondForSubMenu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fas fa-bars" style="color: #001730;"></i>
+                    </span>
+                </button>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fas fa-search" style="color: #001730;"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav" style="margin:auto;">
+                        <form class="d-flex mx-2">
+                            <!--  -->
+                            <input class="form-control me-2" id="searchGlobalTopic1" type="search"
+                                placeholder="Search Topics" aria-label="Search" style="background-color: white; "
+                                size="13">
+                            <button type="button" class="btn btn-outline-success" id="searchGlobalBtn1"
+                                onclick="window.location.href = 'forSearchBasicLayout.html';">Search</button>
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link" href="esehi.html" style="color:#001730">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="latest.html" style="color:#001730">Latest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="covid-19.html" style="color:#001730">COVID-19</a>
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" style="color:#001730"
+                                id="indiaDropdownMegaMenu">India <span style="font-size: xx-small;">▼</span></a>
+                            <div class="dropdown-menu megamenu" role="menu" style="background-color: #CAE7DF;">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6 columnBorder">
+                                        <div class="col-megamenu">
+                                            <h7 class="title"><b>Daily News</b></h7>
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiageneral"
+                                                        onclick="navFunc(this.id)">General</a></li>
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiascience"
+                                                        onclick="navFunc(this.id)">Science</a></li>
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiabusiness"
+                                                        onclick="navFunc(this.id)">Business</a></li>
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiasports"
+                                                        onclick="navFunc(this.id)">Sports</a></li>
+                                                <li><a href="indiaSubFolderRecent.html" id="navIndiahealth"
+                                                        onclick="navFunc(this.id)">Health</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6" style="padding-left: 20px;">
+                                        <div class="col-megamenu">
+                                            <h7 class="title"><b>States</b></h7>
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMaharashtra"
+                                                        onclick="navFunc(this.id)">Maharashtra</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDelhi"
+                                                        onclick="navFunc(this.id)">Delhi</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaKarnataka"
+                                                        onclick="navFunc(this.id)">Karnataka</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaTamil-Nadu"
+                                                        onclick="navFunc(this.id)">Tamil Nadu</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaTelangana"
+                                                        onclick="navFunc(this.id)">Telangana</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaUttar-Pradesh"
+                                                        onclick="navFunc(this.id)">Uttar Pradesh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaWest-Bengal"
+                                                        onclick="navFunc(this.id)">West Bengal</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaGujarat"
+                                                        onclick="navFunc(this.id)">Gujarat</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMadhya-Pradesh"
+                                                        onclick="navFunc(this.id)">Madhya Pradesh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaBihar"
+                                                        onclick="navFunc(this.id)">Bihar</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaChandigarh"
+                                                        onclick="navFunc(this.id)">Chandigarh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaRajasthan"
+                                                        onclick="navFunc(this.id)">Rajasthan</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h7 class="title"><b>States</b></h7>
+                                            <ul class="list-unstyled">
+
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAsssam"
+                                                        onclick="navFunc(this.id)">Assam</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaChattisgarh"
+                                                        onclick="navFunc(this.id)">Chattisgarh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaGoa"
+                                                        onclick="navFunc(this.id)">Goa</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaHaryana"
+                                                        onclick="navFunc(this.id)">Haryana</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaHimachal-Pradesh"
+                                                        onclick="navFunc(this.id)">Himachal Pradesh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJammu-Kashmir"
+                                                        onclick="navFunc(this.id)">Jammu Kashmir</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJharkhand"
+                                                        onclick="navFunc(this.id)">Jharkhand</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaKerala"
+                                                        onclick="navFunc(this.id)">Kerala</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaManipur"
+                                                        onclick="navFunc(this.id)">Manipur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMeghalaya"
+                                                        onclick="navFunc(this.id)">Meghalaya</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMizoram"
+                                                        onclick="navFunc(this.id)">Mizoram</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaArunachal-Pradesh"
+                                                        onclick="navFunc(this.id)">Arunachal Pradesh</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div>
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h7 class="title"><b>States</b></h7>
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaNagaland"
+                                                        onclick="navFunc(this.id)">Nagaland</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaOdisha"
+                                                        onclick="navFunc(this.id)">Odisha</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaPunjab"
+                                                        onclick="navFunc(this.id)">Punjab</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaSikkim"
+                                                        onclick="navFunc(this.id)">Sikkim</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaTripura"
+                                                        onclick="navFunc(this.id)">Tripura</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaUttarakhand"
+                                                        onclick="navFunc(this.id)">Uttarakhand</a></li>
+                                                <li><a href="indiaSubFolderState.html"
+                                                        id="navIndiaAndaman-and-Nikobar-Islands"
+                                                        onclick="navFunc(this.id)">Andaman and Nikobar Islands</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDadra-Nagra-Haveli"
+                                                        onclick="navFunc(this.id)">Dadra Nagra Haveli</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDaman-Diu"
+                                                        onclick="navFunc(this.id)">Daman Diu</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaLakshwadweep"
+                                                        onclick="navFunc(this.id)">Lakshwadweep</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaPondicherry"
+                                                        onclick="navFunc(this.id)">Pondicherry</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAndhra-Pradesh"
+                                                        onclick="navFunc(this.id)">Andhra Pradesh</a></li>
+
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" style="color:#001730">
+                                Cities <span style="font-size: xx-small;">▼</span></a>
+                            <div class="dropdown-menu megamenu" style="background-color: #CAE7DF;" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6 columnBorder">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMumbai"
+                                                        onclick="navFunc(this.id)">Mumbai</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDelhi"
+                                                        onclick="navFunc(this.id)">Delhi</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaBengaluru"
+                                                        onclick="navFunc(this.id)">Bengaluru</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaHydrebad"
+                                                        onclick="navFunc(this.id)">Hydrebad</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaKolkata"
+                                                        onclick="navFunc(this.id)">Kolkata</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaChennai"
+                                                        onclick="navFunc(this.id)">Chennai</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAgra"
+                                                        onclick="navFunc(this.id)">Agra</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAhmedabad"
+                                                        onclick="navFunc(this.id)">Ahmedabad</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAjmer"
+                                                        onclick="navFunc(this.id)">Ajmer</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6 columnBorder" style="padding-left: 20px;">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaAurangabad"
+                                                        onclick="navFunc(this.id)">Aurangabad</a></li>
+
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaBareilly"
+                                                        onclick="navFunc(this.id)">Bareilly</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndia"
+                                                        onclick="navFunc(this.id)">Bhubandshwar</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaBhopal"
+                                                        onclick="navFunc(this.id)">Bhopal</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndia"
+                                                        onclick="navFunc(this.id)">Chandigarh</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaDehradun"
+                                                        onclick="navFunc(this.id)">Dehradun</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaFaridabad"
+                                                        onclick="navFunc(this.id)">Faridabad</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaGhaziabad"
+                                                        onclick="navFunc(this.id)">Ghaziabad</a></li>
+                                                <li><a href="indiaSubFolderState.html"
+                                                        id="navIndiaGuwahati">Guwahati</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6 columnBorder" style="padding-left: 20px;">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaIndore"
+                                                        onclick="navFunc(this.id)">Indore</a></li>
+
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJaipur"
+                                                        onclick="navFunc(this.id)">Jaipur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJammu"
+                                                        onclick="navFunc(this.id)">Jammu</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaJodhpur"
+                                                        onclick="navFunc(this.id)">Jodhpur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaKanpur"
+                                                        onclick="navFunc(this.id)">Kanpur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaMeerut"
+                                                        onclick="navFunc(this.id)">Meerut</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaNagpur"
+                                                        onclick="navFunc(this.id)">Nagpur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndia"
+                                                        onclick="navFunc(this.id)">Puducherry</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaPune"
+                                                        onclick="navFunc(this.id)">Pune</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div>
+                                    <div class="col-lg-3 col-6" style="padding-left: 20px;">
+                                        <div class="col-megamenu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaRajkot"
+                                                        onclick="navFunc(this.id)">Rajkot</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaShrinagar"
+                                                        onclick="navFunc(this.id)">Shrinagar</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaSurat"
+                                                        onclick="navFunc(this.id)">Surat</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaShimla"
+                                                        onclick="navFunc(this.id)">Shimla</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndia"
+                                                        onclick="navFunc(this.id)">Thirvananthapuram</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaUdaipur"
+                                                        onclick="navFunc(this.id)">Udaipur</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaVaranasi"
+                                                        onclick="navFunc(this.id)">Varanasi</a></li>
+                                                <li><a href="indiaSubFolderState.html" id="navIndiaVishakhapatnam"
+                                                        onclick="navFunc(this.id)">Vishakhapatnam</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:#001730">World <span
+                                    style="font-size: xx-small;">▼</span>
+                            </a>
+                            <ul class="dropdown-menu list-unstyled" aria-labelledby="navbarDropdownMenuLink"
+                                style="padding-left: 10px; background-color: #CAE7DF;">
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiaDaman-Diu"
+                                        onclick="navFunc(this.id)">World</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiausUnited-States"
+                                        onclick="navFunc(this.id)">United States</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiapkPakistan"
+                                        onclick="navFunc(this.id)">Pakistan</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiainIndia"
+                                        onclick="navFunc(this.id)">India</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiatwChina"
+                                        onclick="navFunc(this.id)">China</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiajpJapan"
+                                        onclick="navFunc(this.id)">Japan</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiadeGermany"
+                                        onclick="navFunc(this.id)">Germany</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndiaauAustralia"
+                                        onclick="navFunc(this.id)">Australia</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzNew-Zealand"
+                                        onclick="navFunc(this.id)">New Zealand</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzSpain"
+                                        onclick="navFunc(this.id)">Spain</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzTurkey"
+                                        onclick="navFunc(this.id)">Turkey</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzItaly"
+                                        onclick="navFunc(this.id)">Italy</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzUnited-Kingdom"
+                                        onclick="navFunc(this.id)">United Kingdom</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzBelguim"
+                                        onclick="navFunc(this.id)">Belguim</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="business.html" style="color:#001730">Business </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cricket.html" style="color:#001730"> Cricket</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:#001730">Sports <span
+                                    style="font-size: xx-small;">▼</span>
+                            </a>
+                            <ul class="dropdown-menu list-unstyled" aria-labelledby="navbarDropdownMenuLink"
+                                style="padding-left: 10px; background-color: #CAE7DF;">
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaIPL" onclick="navFunc(this.id)">IPL</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaFootball"
+                                        onclick="navFunc(this.id)">Football</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaBadminton"
+                                        onclick="navFunc(this.id)">Badminton</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaHockey"
+                                        onclick="navFunc(this.id)">Hockey</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaTennis"
+                                        onclick="navFunc(this.id)">Tennis</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaRacing"
+                                        onclick="navFunc(this.id)">Racing</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaAtheletics"
+                                        onclick="navFunc(this.id)">Atheletics</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaVolleyball"
+                                        onclick="navFunc(this.id)">Volleyball</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaChess"
+                                        onclick="navFunc(this.id)">Chess</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaWWE" onclick="navFunc(this.id)">WWE</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaBoxing"
+                                        onclick="navFunc(this.id)">Boxing</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaGolf" onclick="navFunc(this.id)">Golf</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaSnooker"
+                                        onclick="navFunc(this.id)">Snooker</a>
+                                </li>
+                                <li>
+                                    <a href="sportsSubFolder.html" id="navIndiaWrestling"
+                                        onclick="navFunc(this.id)">Wrestling</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="crypto.html" style="color:#001730">Crypto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:#001730">Entertainment
+                                <span style="font-size: xx-small;">▼</span>
+                            </a>
+                            <ul class="list-unstyled dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+                                style="padding-left: 10px; background-color: #CAE7DF;">
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzBollywood"
+                                        onclick="navFunc(this.id)">Bollywood</a>
+                                </li>
+                                <li>
+                                    <a href="worldSubFolder.html" id="navIndianzHollywood"
+                                        onclick="navFunc(this.id)">Hollywood</a>
+                                </li>
+
+                            </ul>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="technology.html" style="color:#001730">Technology </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="weather.html" style="color:#001730">Weather</a>
+                        </li>
+                        <li class="nav-item" id="socialMediaIconForHide">
+                            <a class="nav-link navbar-brand navSocialIcon" style="padding:0 0 0 0;"
+                                href="https://www.instagram.com">
+                                <img src="img/instagram1.jpg" alt="" width="20" height="20">
+                            </a><a class="nav-link navbar-brand navSocialIcon" style="padding:0 0 0 0;"
+                                href="https://www.facebook.com">
+                                <img src="img/facebook1.jpg" alt="" width="20" height="20">
+                            </a><a class="nav-link navbar-brand navSocialIcon" style="padding:0 0 0 0;"
+                                href="https://www.twitter.com">
+                                <img src="img/twitter1.jpg" alt="" width="20" height="20">
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div> <!-- navbar-collapse.// -->
+
+            </div> <!-- container-fluid.// -->
+        </nav>
+    </div>
+    <div class="content">
+
+        <div class="my-4 mx-4">
+            <div id="heading"></div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="newsContainerleft1IdSize">
+                        <div class="row">
+                            <div class="col" id="newsContainerleft1Id">
+                                <div id="newsContainerleft1"></div>
+
+                                <!-- <div style="background-color: white; height: 355px; width: auto;">
+                                                                    <img src="img/modi.jpg" style="width: 100%; height: 250px;">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Light card title</h5>
+                                                                        <p class="card-text">Some quick example text to build on the card title and make
+                                                                            up
+                                                                            the bulk of the card's content.</p>
+                                                                    </div> 
+                                                                </div> -->
+                            </div>
+                            <div id="newsContainerleft1Id2" class="col" style="height:315px">
+                                <div id="newscontainerleft2"></div>
+
+
+
+
+                                <!-- <div class="card text-dark mb-3"   
+                                                                    style="width: auto; height: auto; background-color: white;">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Light card title</h5>
+                                                                        <p class="card-text">Some quick example text to build on the card title and make
+                                                                            up
+                                                                            the bulk of the card's content.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card text-dark mb-3"
+                                                                    style="width: auto; height: auto; background-color: white;">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Light card title</h5>
+                                                                        <p class="card-text">Some quick example text to build on the card title and make
+                                                                            up
+                                                                            the bulk of the card's content.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card text-dark" style="width: auto; height: auto; background-color: white;">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">Light card title</h5>
+                                                                        <p class="card-text">Some quick example text to build on the card title and make
+                                                                            up
+                                                                            the bulk of the card's content.</p>
+                                                                    </div>
+                                                                </div> -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newsContainer"></div>
+                    <div id="newsContainer1" style=" padding-left: 12px; padding-right: 12px;">
+                        <!-- <div class="row my-3" style="background-color: white; height: 130px;">
+                                <div class="col-4" style="padding:0 0 0 0;">
+                                    <img src="https://cdn.vox-cdn.com/thumbor/CKp0YjnwF88--mWg1kfPmspvfzY=/0x358:5000x2976/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22988084/1234440443.jpg"
+                                        class="img-fluid" style="height: 100%;" alt="...">
+                                </div>
+                                <div class="col-8">
+                                        <h5 class="card-title">${newsTitle}</h5>
+                                        <p class="card-text upCardText">${newsDescr}</p>
+
+                                </div>
+                            </div> -->
+
+
+                    </div>
+                    <!-- <div class="card mb-3 midCard" style="max-width: auto;">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4" style="overflow: hidden;">
+                                                                <div class="imgContainer">
+                                                                    <img src="https://cdn.vox-cdn.com/thumbor/CKp0YjnwF88--mWg1kfPmspvfzY=/0x358:5000x2976/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22988084/1234440443.jpg"
+                                                                        class="img-fluid upCardImg" alt="...">
+                                                                </div>
+                                                            </div>
+                                                            <div class="upImage-top-left"><span
+                                                                    style="background-color: rgb(179, 0, 0); padding: 1px 10px 1px 10px;">Tech</span>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <h6 class="card-title">Card title</h6>
+                                                                    <p class="card-text upCardText">This is a wider card with supporting text below
+                                                                        as a
+                                                                        natural
+                                                                        lead-in to additional content.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+
+
+
+
+                </div>
+                <div class="col-md-4">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action"
+                            style="border-top:10px solid #001730; border-radius: 10px 10px 0px 0;" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h3 class="mb-1" style="color: black;">COVID-19 in India</h3>
+                            </div>
+
+                        </a>
+                        <div id="newscontainerright1"></div>
+                        <!-- <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h5 class="mb-1" style="color: black;">List group item heading</h5>
+                                                            <small>3 days ago</small>
+                                                        </div>
+                                                        <p class="mb-1" style="color: black;">Some placeholder content in a paragraph.</p>
+                                                        <small style="color: black;">And some small print.</small>
+                                                    </a> -->
+
+
+                    </div>
+                    <div class="list-group my-3">
+                        <a href="#" class="list-group-item list-group-item-action"
+                            style="border-top:10px solid #001730; border-radius: 10px 10px 0px 0;" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h3 class="mb-1" style="color: black;">Most Popular</h3>
+                            </div>
+                        </a>
+                        <div id="newscontainerright2"></div>
+
+
+                    </div>
+
+
+                    <ul class="list-group my-3">
+                        <a href="#"></a>
+                        <li class="list-group-item" aria-current="true">
+                            <h3>World News</h3>
+                        </li>
+                        <div id="newscontainerright3"></div>
+                        <!-- <li class="list-group-item">A second item</li> -->
+                    </ul>
+
+                    <ul class="list-group my-3">
+                        <a href="#"></a>
+                        <li class="list-group-item" aria-current="true">
+                            <h3>Business News</h3>
+                        </li>
+                        <div id="newscontainerright4"></div>
+                        <!-- <li class="list-group-item">A second item</li> -->
+                    </ul>
+                    <ul class="list-group my-3">
+                        <a href="#"></a>
+                        <li class="list-group-item" aria-current="true">
+                            <h3>Entertainment</h3>
+                        </li>
+                        <div id="newscontainerright5"></div>
+                        <!-- <li class="list-group-item">A second item</li> -->
+                    </ul>
+                    <ul class="list-group my-3">
+                        <a href="#"></a>
+                        <li class="list-group-item" aria-current="true">
+                            <h3>Education</h3>
+                        </li>
+                        <div id="newscontainerright6"></div>
+                        <!-- <li class="list-group-item">A second item</li> -->
+                    </ul>
+                    <ul class="list-group my-3">
+                        <a href="#"></a>
+                        <li class="list-group-item" aria-current="true">
+                            <h3>Sports</h3>
+                        </li>
+                        <div id="newscontainerright7"></div>
+                        <!-- <li class="list-group-item">A second item</li> -->
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center" id='paginationLi'>
+                <!-- <li class="page-item">
+                                    <a class="page-link" onclick='prevFunction()'>Previous</a>
+                                </li> -->
+
+                <!-- <li class="page-item"><a class="page-link">1</a></li> -->
+                <!-- <li class="page-item">
+                                    <a class="page-link" onclick='nextFunction()'>Next</a>
+                                </li> -->
+            </ul>
+        </nav>
+        <footer class="w-100 py-4 flex-shrink-0">
+            <div class="container py-4">
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-4 col-md-6">
+                        <a class="navbar-brand" href="esehi.html"
+                            style="color:white;margin:auto; font-family: 'Archivo Black', sans-serif;">
+                            <h1 style="margin-bottom: 0;">NEWS HUB</h1>
+                        </a>
+                        <p class="small text-muted">News blogs and Magazines</p>
+                        <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
+                                href="esehi.html">newshub.com</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h7 class="text-white mb-3">Popular Categories</h7>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="politics.html" style="color: #545454;">Politics</a></li>
+                            <li><a href="sports.html" style="color: #545454;">Sports</a></li>
+                            <li><a href="latest.html" style="color: #545454;">Latest</a></li>
+                            <li><a href="technology.html" style="color: #545454;">Technology</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h7 class="text-white mb-3">Popular Topics</h7>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="top-trending.html" style="color: #545454;">Top-trending</a></li>
+                            <li><a href="covid-19.html" style="color: #545454;">COVID-19</a></li>
+                            <li><a href="entertainment.html" style="color: #545454;">Entertainment</a></li>
+                            <li><a href="india.html" style="color: #545454;">India</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h7 class="text-white mb-3">News Hub</h7>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="esehi.html" style="color: #545454;">Home</a></li>
+                            <li><a href="contactUs.html" style="color: #545454;">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h7 class="text-white mb-3">Connect</h7>
+                        <ul class="list-unstyled text-muted">
+                            <li><a href="https://www.facebook.com" style="color: #545454;">Facebook</a></li>
+                            <li><a href="https://www.twitter.com" style="color: #545454;">Twitter</a></li>
+                            <li><a href="https://www.instagram.com" style="color: #545454;">Instagram</a></li>
+                            <li><a href="https://www.reddit.com" style="color: #545454;">Reddit</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+ // let apikey = '978e3ab56df0401681195deba5c8ed2f'; // let apikey = 'f67f25d95383493689f7e93eccee1028'; //yashvardhan jadhav
+        // let apikey = '67b4af3104714f318609185d1ca9e8c6'; //chessprinters
+        // let apikey = 'f0bf0c82cc5f45f29dda5cbe53a15521';// vishal
+        // let apikey = '6464b91ad49a448fb6cd6b2382237beb'; // news hub
+        // let apikey = 'bd0db3ee2f2345bdba8289ad486ddcfa'; // pp
+        // let apikey = 'db41ebbcf60141868b0b1db7abc974ee';
+        // let apikey = '6d41db77edbb41538c66b3bb39584427';
+        // let apikey = '1163f0a7ece04fcf9b4da3b208b0a9e7';
+        // let apikey = '978e3ab56df0401681195deba5c8ed2f';
+        // let apikey='d835bf30eba244da990585f972f68565';
+
+        let apiKeyArr = ['f67f25d95383493689f7e93eccee1028','67b4af3104714f318609185d1ca9e8c6','f0bf0c82cc5f45f29dda5cbe53a15521','6464b91ad49a448fb6cd6b2382237beb','bd0db3ee2f2345bdba8289ad486ddcfa','db41ebbcf60141868b0b1db7abc974ee','6d41db77edbb41538c66b3bb39584427','1163f0a7ece04fcf9b4da3b208b0a9e7','978e3ab56df0401681195deba5c8ed2f','d835bf30eba244da990585f972f68565']
+        let indexForApi = Math.floor((Math.random() * 10) + 1);
+        let apikey = apiKeyArr[indexForApi];
+   
+    let headingHtml = `<h2>Top-Trending News</h2><hr>`;
+    heading.innerHTML = headingHtml;
+    function forNoOfResults(callback) {
+        setTimeout(() => {
+            const xhrResult = new XMLHttpRequest();
+            xhrResult.open(`GET`, `https://newsapi.org/v2/top-headlines?category=general&language=en&pageSize=1&apiKey=${apikey}`, true);
+            xhrResult.onload = function () {
+                let newsObj = this.responseText;
+                noOfResults = newsObj.totalResults;
+            }
+            xhrResult.send();
+            callback();
+        }, 3000);
+    }
+    forNoOfResults(noOfPagesFunc);
+
+    let newsContainerleft1 = document.getElementById("newsContainerleft1");
+    const xhrleft1 = new XMLHttpRequest();
+    xhrleft1.open(`GET`, `https://newsapi.org/v2/top-headlines?category=general&language=en&apiKey=${apikey}`, true);
+    xhrleft1.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        noOfResults = newsContent.totalResults;
+        let articles = newsContent.articles;
+
+        let newsHtml = ``;
+        if (articles[0]["urlToImage"] == null || articles[0]["title"] == null || articles[0]["description"] == null || articles[0]["urlToImage"] == undefined || articles[0]["title"] == undefined || articles[0]["description"] == undefined) {
+            return;
+        }
+        let newsTitle, newsDescr;
+        let dot = `...`;
+        if (articles[0]["title"].length < 40) {
+            newsTitle = articles[0]["title"];
+            newsDescr = articles[0]["description"];
+            if (newsDescr.length > 100) {
+                newsDescr = articles[0]["description"].substring(0, 100);
+                newsDescr = addStr(newsDescr, 100, dot);
+            }
+        }
+        else if (articles[0]["title"].length < 80) {
+            newsTitle = articles[0]["title"];
+            newsDescr = articles[0]["description"];
+            if (newsDescr.length > 50) {
+                newsDescr = articles[0]["description"].substring(0, 55);
+                newsDescr = addStr(newsDescr, 55, dot);
+            }
+        }
+        else {
+            newsTitle = articles[0]["title"];
+            newsDescr = ``;
+        }
+        newsHtml = `
+                        <a href="${articles[0]["url"]}" style="text-decoration:none;">
+                                        <div style="background-color: white; width: auto;" id="newsContainerleft1IdcardSize">
+                                        <img src="${articles[0]["urlToImage"]}" id="newsContainerleft1IdcardSizeImg">
+                                            <div class="card-body">
+
+                                            <h5 class="card-title" id="cardTitleLeft1">${newsTitle}</h5>
+                                        
+
+                                            </div> 
+                                            </div>
+                                                </a>`
+        newsContainerleft1.innerHTML = newsHtml;
+    }
+
+    let newscontainerleft2 = document.getElementById("newscontainerleft2");
+    const xhrleft2 = new XMLHttpRequest();
+    xhrleft2.open(`GET`, `https://newsapi.org/v2/top-headlines?category=general&language=en&apiKey=${apikey}`, true);
+    xhrleft2.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        let articles = newsContent.articles;
+        let newsHtml = ``;
+        for (let i = 1; i <= 3; i++) {
+            if (articles[0]["urlToImage"] == null || articles[0]["title"] == null || articles[0]["description"] == null || articles[0]["urlToImage"] == undefined || articles[0]["title"] == undefined || articles[0]["description"] == undefined) {
+                return;
+            }
+            let newsTitle, newsDescr;
+            let dot = `...`;
+            if (articles[i]["title"].length < 32) {
+                newsTitle = articles[i]["title"];
+                newsDescr = articles[i]["description"];
+                if (newsDescr.length > 100) {
+                    newsDescr = articles[i]["description"].substring(0, 100);
+                    newsDescr = addStr(newsDescr, 100, dot);
+                }
+            }
+            else if (articles[i]["title"].length < 80) {
+                newsTitle = articles[i]["title"];
+                newsDescr = articles[i]["description"];
+                if (newsDescr.length > 50) {
+                    newsDescr = articles[i]["description"].substring(0, 50);
+                    newsDescr = addStr(newsDescr, 50, dot);
+                }
+            }
+            else {
+                newsTitle = articles[i]["title"];
+                newsDescr = ``;
+            }
+
+
+            newsHtml += `
+                            <a href="${articles[i]["url"]}" style="text-decoration:none;">
+                            <div style="background-color: white; height: 108px; width: auto; margin-bottom: 15px; ">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">${newsTitle}</h5>
+                                                                        <p class="card-text upCardText newsLeft2Descr" style="font-size:15px; color:black;">${newsDescr}</p>
+                                                                    </div>
+                                                                </div>
+                                                                </a>`
+        }
+        newscontainerleft2.innerHTML = newsHtml;
+    }
+    let newsContainer = document.getElementById("newsContainer");
+    let newsContainer1 = document.getElementById("newsContainer1");
+    const xhr = new XMLHttpRequest();
+    xhr.open(`GET`, `https://newsapi.org/v2/top-headlines?category=general&language=en&apiKey=${apikey}`, true);
+    xhr.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        // noOfResults = newsContent["totalResults"];
+        let articles = newsContent.articles;
+        let newsHtml = ``;
+        let newsHtml1 = ``;
+        let count = 0;
+        articles.forEach(element => {
+            count++;
+            if (count == 1 || count == 2 || count == 3 || count == 4) {
+                return;
+            }
+            if (element["urlToImage"] == null || element["title"] == null || element["description"] == null || element["urlToImage"] == undefined || element["title"] == undefined || element["description"] == undefined) {
+                return;
+            }
+            if (element["description"].length > 135) {
+                element["description"] = element["description"].substring(0, 120);
+            }
+            newsHtml1 += `
+                <a href="${element["url"]}" id="containerLink">
+
+                <div class="row my-3" style="background-color: white; height: 80px; overflow:hidden;">
+                                <div class="col-4" style="padding:0 0 0 0;">
+                                    <img src="${element["urlToImage"]}"
+                                        class="img-fluid" style="height: 100%; overflow:hidden;" alt="...">
+                                </div>
+                                <div class="col-8">
+                                        <h6 class="card-title my-2">${element["title"]}</h6>
+                                    
+
+                                </div>
+                            </div>
+                            </a>
+                `;
+            newsHtml += `
+                            <a href="${element["url"]}" style="text-decoration:none;">
+                                                    <div class="card mb-3 my-3 midCard" id="midCardWidth" style="max-width: auto;">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 imgContainer1" style="overflow: hidden;">
+                                                                <div class="imgContainer">
+                                                                    <img src="${element["urlToImage"]}"
+                                                                        class="img-fluid upCardImg" alt="...">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">${element["title"]}</h5>
+                                                                    <p class="card-text upCardText" style="font-size:15px; color:black;">${element["description"]}</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>`;
+        });
+        newsContainer.innerHTML = newsHtml;
+        newsContainer1.innerHTML = newsHtml1;
+    }
+
+    function addStr(str, index, stringToAdd) {
+        return str.substring(0, index) + stringToAdd + str.substring(index, str.length);
+    }
+
+
+    let newscontainerright1 = document.getElementById("newscontainerright1");
+    const xhrright1 = new XMLHttpRequest();
+    xhrright1.open(`GET`, `https://newsapi.org/v2/everything?q='covid'&apiKey=${apikey}`, true);
+    xhrright1.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        let articles = newsContent.articles;
+        let newsHtml = ``;
+        for (let i = 1; i <= 5; i++) {
+            if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                return;
+            }
+            let descr1 = articles[i]["description"];
+            let descr = ``;
+            let dot = `...`;
+            if (descr1.length > 100) {
+                let descr2 = descr1.substring(0, 100);
+                descr = addStr(descr2, 100, dot);
+            }
+            else {
+                descr = descr1;
+            }
+
+            newsHtml += `
+                            <a href="${articles[i]["url"]}" class="list-group-item list-group-item-action" aria-current="true">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h5 class="mb-1" style="color: black;">${articles[i]["title"]}</h5>
+                                                        </div>
+                                                        <p class="mb-1 rightAll" style="color: black;">${descr}</p>
+                                                    </a>`
+        }
+        newscontainerright1.innerHTML = newsHtml;
+    }
+
+    let newscontainerright2 = document.getElementById("newscontainerright2");
+    const xhrright2 = new XMLHttpRequest();
+    xhrright2.open(`GET`, `https://newsapi.org/v2/everything?q='india'&apiKey=${apikey}`, true);
+    xhrright2.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        let articles = newsContent.articles;
+        let newsHtml = ``;
+        for (let i = 1; i <= 5; i++) {
+            if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                return;
+            }
+            let descr1 = articles[i]["description"];
+            let descr = ``;
+            let dot = `...`;
+            if (descr1.length > 100) {
+                let descr2 = descr1.substring(0, 100);
+                descr = addStr(descr2, 100, dot);
+            }
+            else {
+                descr = descr1;
+            }
+
+            newsHtml += `<a href="${articles[i]["url"]}" class="list-group-item list-group-item-action" aria-current="true">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h5 class="mb-1" style="color: black;">${articles[i]["title"]}</h5>
+                                                        </div>
+                                                        <p class="mb-1 rightAll" style="color: black;">${descr}</p>
+                                                    </a>`
+        }
+        newscontainerright2.innerHTML = newsHtml;
+    }
+    let newscontainerright3 = document.getElementById("newscontainerright3");
+    const xhrright3 = new XMLHttpRequest();
+    xhrright3.open(`GET`, `https://newsapi.org/v2/everything?q='india'&apiKey=${apikey}`, true);
+    xhrright3.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        let articles = newsContent.articles;
+        let newsHtml = ``;
+        for (let i = 0; i <= 5; i++) {
+            if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                return;
+            }
+
+            newsHtml += `<a href="${articles[i]["url"]}" class="list-group-item list-group-item-action" aria-current="true">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h6 class="mb-1" style="color: black;">${articles[i]["title"]}</h6>
+                                                        </div>
+                                                    </a>`
+        }
+        newscontainerright3.innerHTML = newsHtml;
+    }
+    let newscontainerright4 = document.getElementById("newscontainerright4");
+    const xhrright4 = new XMLHttpRequest();
+    xhrright4.open(`GET`, `https://newsapi.org/v2/everything?q='Business'&apiKey=${apikey}`, true);
+    xhrright4.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        let articles = newsContent.articles;
+        let newsHtml = ``;
+        for (let i = 0; i <= 5; i++) {
+            if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                return;
+            }
+
+            newsHtml += `<a href="${articles[i]["url"]}" class="list-group-item list-group-item-action" aria-current="true">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h6 class="mb-1" style="color: black;">${articles[i]["title"]}</h6>
+                                                        </div>
+                                                    </a>`
+        }
+        newscontainerright4.innerHTML = newsHtml;
+    }
+    let newscontainerright5 = document.getElementById("newscontainerright5");
+    const xhrright5 = new XMLHttpRequest();
+    xhrright5.open(`GET`, `https://newsapi.org/v2/everything?q='entertainment'&apiKey=${apikey}`, true);
+    xhrright5.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        let articles = newsContent.articles;
+        let newsHtml = ``;
+        for (let i = 0; i <= 5; i++) {
+            if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                return;
+            }
+
+            newsHtml += `<a href="${articles[i]["url"]}" class="list-group-item list-group-item-action" aria-current="true">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h6 class="mb-1" style="color: black;">${articles[i]["title"]}</h6>
+                                                        </div>
+                                                    </a>`
+        }
+        newscontainerright5.innerHTML = newsHtml;
+    }
+    let newscontainerright6 = document.getElementById("newscontainerright6");
+    const xhrright6 = new XMLHttpRequest();
+    xhrright6.open(`GET`, `https://newsapi.org/v2/everything?q='education'&apiKey=${apikey}`, true);
+    xhrright6.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        let articles = newsContent.articles;
+        let newsHtml = ``;
+        for (let i = 0; i <= 5; i++) {
+            if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                return;
+            }
+
+            newsHtml += `<a href="${articles[i]["url"]}" class="list-group-item list-group-item-action" aria-current="true">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h6 class="mb-1" style="color: black;">${articles[i]["title"]}</h6>
+                                                        </div>
+                                                    </a>`
+        }
+        newscontainerright6.innerHTML = newsHtml;
+    }
+    let newscontainerright7 = document.getElementById("newscontainerright7");
+    const xhrright7 = new XMLHttpRequest();
+    xhrright7.open(`GET`, `https://newsapi.org/v2/top-headlines?category=sports&apiKey=${apikey}`, true);
+    xhrright7.onload = function () {
+        if (this.status != 200) {
+            return;
+        }
+        let newsContent = JSON.parse(this.responseText);
+        let articles = newsContent.articles;
+        let newsHtml = ``;
+        for (let i = 0; i <= 5; i++) {
+            if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                return;
+            }
+
+            newsHtml += `<a href="${articles[i]["url"]}" class="list-group-item list-group-item-action" aria-current="true">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                            <h6 class="mb-1" style="color: black;">${articles[i]["title"]}</h6>
+                                                        </div>
+                                                    </a>`
+        }
+        newscontainerright7.innerHTML = newsHtml;
+    }
+    xhrleft1.send();
+    xhrleft2.send();
+    xhr.send();
+    xhrright1.send();
+    xhrright2.send();
+    xhrright3.send();
+    xhrright4.send();
+    xhrright5.send();
+    xhrright6.send();
+    xhrright7.send();
+
+
+    var count = 1;
+    function nextFunction() {
+        count++;
+
+        let news = document.getElementById('newsContainer');
+        let news1 = document.getElementById('newsContainer1');
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', `https://newsapi.org/v2/top-headlines?category=general&language=en&page=${count}&pageSize=24&apiKey=${apikey}`, true);
+        xhr.onload = function () {
+            if (this.status != 200) {
+                return;
+            }
+            let newsObj = JSON.parse(this.responseText);
+            articles = newsObj.articles;
+            let newsHtml1 = ``;
+            let newsHtml1R = ``;
+            let newsHtml2R = ``;
+            let newsHtml2 = ``;
+            let newsHtml3 = ``;
+
+
+            // these for left 1
+
+            if (articles[0]["urlToImage"] == null || articles[0]["title"] == null || articles[0]["description"] == null || articles[0]["urlToImage"] == undefined || articles[0]["title"] == undefined || articles[0]["description"] == undefined) {
+                return;
+            }
+            let newsTitle, newsDescr;
+            let dot = `...`;
+            if (articles[0]["title"].length < 40) {
+                newsTitle = articles[0]["title"];
+                newsDescr = articles[0]["description"];
+                if (newsDescr.length > 100) {
+                    newsDescr = articles[0]["description"].substring(0, 100);
+                    newsDescr = addStr(newsDescr, 100, dot);
+                }
+            }
+            else if (articles[0]["title"].length < 80) {
+                newsTitle = articles[0]["title"];
+                newsDescr = articles[0]["description"];
+                if (newsDescr.length > 50) {
+                    newsDescr = articles[0]["description"].substring(0, 55);
+                    newsDescr = addStr(newsDescr, 55, dot);
+                }
+            }
+            else {
+                newsTitle = articles[0]["title"];
+                newsDescr = ``;
+            }
+
+            newsHtml2 = `
+            <a href="${articles[0]["url"]}" style="text-decoration:none;">
+                                        <div style="background-color: white; width: auto;" id="newsContainerleft1IdcardSize">
+                                        <img src="${articles[0]["urlToImage"]}" id="newsContainerleft1IdcardSizeImg">
+                                            <div class="card-body">
+
+                                            <h5 class="card-title" id="cardTitleLeft1">${newsTitle}</h5>
+                                        
+
+                                            </div> 
+                                            </div>
+                                                </a>`
+            newsContainerleft1.innerHTML = newsHtml2;
+
+            //these is for left 2
+            for (let i = 1; i <= 3; i++) {
+                if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                    return;
+                }
+                let newsTitle, newsDescr;
+                let dot = `...`;
+                if (articles[i]["title"].length < 32) {
+                    newsTitle = articles[i]["title"];
+                    newsDescr = articles[i]["description"];
+                    if (newsDescr.length > 100) {
+                        newsDescr = articles[i]["description"].substring(0, 100);
+                        newsDescr = addStr(newsDescr, 100, dot);
+                    }
+                }
+                else if (articles[i]["title"].length < 80) {
+                    newsTitle = articles[i]["title"];
+                    newsDescr = articles[i]["description"];
+                    if (newsDescr.length > 50) {
+                        newsDescr = articles[i]["description"].substring(0, 50);
+                        newsDescr = addStr(newsDescr, 50, dot);
+                    }
+                }
+                else {
+                    newsTitle = articles[i]["title"];
+                    newsDescr = ``;
+                }
+
+
+                newsHtml3 += `<div style="background-color: white; height: 108px; width: auto; margin-bottom: 15px;">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">${newsTitle}</h5>
+                                                                        <p class="card-text upCardText" style="font-size:15px; color:black;">${newsDescr}</p>
+                                                                    </div>
+                                                                </div>`
+            }
+            newscontainerleft2.innerHTML = newsHtml3;
+            //these is for main container
+            let i;
+
+            for (i = 4; i < 24; i++) {
+                if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                    return;
+                }
+                let element = articles[i];
+                newsHtml1R += `
+                    <a href="${element["url"]}" id="containerLink">
+
+<div class="row my-3" style="background-color: white; height: 80px; overflow:hidden;">
+                <div class="col-4" style="padding:0 0 0 0;">
+                    <img src="${element["urlToImage"]}"
+                        class="img-fluid" style="height: 100%; overflow:hidden;" alt="...">
+                </div>
+                <div class="col-8">
+                        <h6 class="card-title my-2">${element["title"]}</h6>
+                    
+
+                </div>
+            </div>
+            </a>
+                    `;
+                newsHtml1 += `<a href="${element["url"]}" style="text-decoration:none;">
+                                                    <div class="card mb-3 my-3 midCard" id="midCardWidth" style="max-width: auto;">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 imgContainer1" style="overflow: hidden;">
+                                                                <div class="imgContainer">
+                                                                    <img src="${element["urlToImage"]}"
+                                                                        class="img-fluid upCardImg" alt="...">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">${element["title"]}</h5>
+                                                                    <p class="card-text upCardText" style="font-size:15px; color:black;">${element["description"]}</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                    `
+            }
+            news.innerHTML = newsHtml1;
+            news1.innerHTML = newsHtml1R;
+        }
+        xhr.send();
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+        console.log(count);
+        pagePrev.style.pointerEvents = "auto";
+        pagePrev.style.color = "#0d6efd";
+        if (count == 4) {
+            console.log('YASHVARDHAN JADHAV');
+            let pageNext = document.getElementById('pageNext');
+            pageNext.style.pointerEvents = "none";
+            pageNext.style.color = "grey"
+        }
+
+    }
+
+
+    function prevFunction() {
+        count--;
+
+        let news = document.getElementById('newsContainer');
+        let news1 = document.getElementById('newsContainer1');
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', `https://newsapi.org/v2/top-headlines?category=general&language=en&page=${count}&pageSize=24&apiKey=${apikey}`, true);
+        xhr.onload = function () {
+            if (this.status != 200) {
+                return;
+            }
+            let newsObj = JSON.parse(this.responseText);
+            articles = newsObj.articles;
+            let newsHtml1 = ``;
+            let newsHtml2 = ``;
+            let newsHtml3 = ``;
+            let newsHtml1R = ``;
+            let i;
+            // these for left 1
+
+            if (articles[0]["urlToImage"] == null || articles[0]["title"] == null || articles[0]["description"] == null || articles[0]["urlToImage"] == undefined || articles[0]["title"] == undefined || articles[0]["description"] == undefined) {
+                return;
+            }
+            let newsTitle, newsDescr;
+            let dot = `...`;
+            if (articles[0]["title"].length < 40) {
+                newsTitle = articles[0]["title"];
+                newsDescr = articles[0]["description"];
+                if (newsDescr.length > 100) {
+                    newsDescr = articles[0]["description"].substring(0, 100);
+                    newsDescr = addStr(newsDescr, 100, dot);
+                }
+            }
+            else if (articles[0]["title"].length < 80) {
+                newsTitle = articles[0]["title"];
+                newsDescr = articles[0]["description"];
+                if (newsDescr.length > 50) {
+                    newsDescr = articles[0]["description"].substring(0, 55);
+                    newsDescr = addStr(newsDescr, 55, dot);
+                }
+            }
+            else {
+                newsTitle = articles[0]["title"];
+                newsDescr = ``;
+            }
+            newsHtml2 = `  <a href="${articles[0]["url"]}" style="text-decoration:none;">
+                                        <div style="background-color: white; width: auto;" id="newsContainerleft1IdcardSize">
+                                        <img src="${articles[0]["urlToImage"]}" id="newsContainerleft1IdcardSizeImg">
+                                            <div class="card-body">
+
+                                            <h5 class="card-title" id="cardTitleLeft1">${newsTitle}</h5>
+                                        
+
+                                            </div> 
+                                            </div>
+                                                </a>`
+            newsContainerleft1.innerHTML = newsHtml2;
+
+            //these is for left 2
+            for (let i = 1; i <= 3; i++) {
+                if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                    return;
+                }
+                let newsTitle, newsDescr;
+                let dot = `...`;
+                if (articles[i]["title"].length < 32) {
+                    newsTitle = articles[i]["title"];
+                    newsDescr = articles[i]["description"];
+                    if (newsDescr.length > 100) {
+                        newsDescr = articles[i]["description"].substring(0, 100);
+                        newsDescr = addStr(newsDescr, 100, dot);
+                    }
+                }
+                else if (articles[i]["title"].length < 80) {
+                    newsTitle = articles[i]["title"];
+                    newsDescr = articles[i]["description"];
+                    if (newsDescr.length > 50) {
+                        newsDescr = articles[i]["description"].substring(0, 50);
+                        newsDescr = addStr(newsDescr, 50, dot);
+                    }
+                }
+                else {
+                    newsTitle = articles[i]["title"];
+                    newsDescr = ``;
+                }
+
+
+                newsHtml3 += `<div style="background-color: white; height: 108px; width: auto; margin-bottom: 15px;">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">${newsTitle}</h5>
+                                                                        <p class="card-text upCardText" style="font-size:15px; color:black;">${newsDescr}</p>
+                                                                    </div>
+                                                                </div>`
+            }
+            newscontainerleft2.innerHTML = newsHtml3;
+
+            // main container
+
+            for (let i = 4; i < 24; i++) {
+                if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                    return;
+                }
+                let element = articles[i];
+                newsHtml1R += `
+                    <a href="${element["url"]}" id="containerLink">
+
+<div class="row my-3" style="background-color: white; height: 80px; overflow:hidden;">
+                <div class="col-4" style="padding:0 0 0 0;">
+                    <img src="${element["urlToImage"]}"
+                        class="img-fluid" style="height: 100%; overflow:hidden;" alt="...">
+                </div>
+                <div class="col-8">
+                        <h6 class="card-title my-2">${element["title"]}</h6>
+                    
+
+                </div>
+            </div>
+            </a>
+                    `;
+                newsHtml1 += `
+                    <a href="${element["url"]}" style="text-decoration:none;">
+                                                    <div class="card mb-3 my-3 midCard" id="midCardWidth" style="max-width: auto;">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 imgContainer1" style="overflow: hidden;">
+                                                                <div class="imgContainer">
+                                                                    <img src="${element["urlToImage"]}"
+                                                                        class="img-fluid upCardImg" alt="...">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">${element["title"]}</h5>
+                                                                    <p class="card-text upCardText" style="font-size:15px ; color:black;">${element["description"]}</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                    `
+            }
+
+            news.innerHTML = newsHtml1;
+            news1.innerHTML = newsHtml1R;
+
+        }
+        xhr.send();
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        if (count == 1) {
+            console.log('YASHVARDHAN JADHAV');
+            let pagePrev = document.getElementById('pagePrev');
+            pagePrev.style.pointerEvents = "none";
+            pagePrev.style.color = "grey"
+        }
+        console.log(count);
+    }
+    function noOfPagesFunc() {
+
+        let noOfPages = noOfResults / 24;
+        if (noOfPages > 4) { // yaha developer account islie apn 100 s zyada result nhi nikal skte agre ye hota to isse apn nikal lete islie ab apn ko no of pages 4 hi krne pdege
+
+            noOfPages = 4;
+        }
+        let pageHtml = ``;
+        let pageNumber = document.getElementById('paginationLi');
+        pageHtml += `
+                            <li class="page-item">
+                                    <a class="page-link" id="pagePrev" onclick='prevFunction()'>Previous</a>
+                                </li>
+                            `;
+        for (let i = 0; i < noOfPages; i++) {
+            pageHtml += `
+                                    <li class="page-item"><a class="page-link" onclick="pageNumberFunction(${i + 1})">${i + 1}</a></li>
+                            `;
+        }
+        pageHtml += `
+                            <li class="page-item">
+                                    <a class="page-link" id="pageNext" onclick='nextFunction()'>Next</a>
+                                </li>
+                            `;
+        pageNumber.innerHTML = pageHtml;
+
+    }
+    function pageNumberFunction(pageNumberClick) {
+        count = pageNumberClick;
+        let news = document.getElementById('newsContainer');
+        let news1 = document.getElementById('newsContainer1');
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', `https://newsapi.org/v2/top-headlines?category=general&language=en&page=${count}&pageSize=24&apiKey=${apikey}`, true);
+        xhr.onload = function () {
+            if (this.status != 200) {
+                return;
+            }
+            let newsObj = JSON.parse(this.responseText);
+            articles = newsObj.articles;
+            let newsHtml1 = ``;
+            let newsHtml1R = ``;
+            let newsHtml2R = ``;
+            let newsHtml2 = ``;
+            let newsHtml3 = ``;
+            let i;
+            // these for left 1
+
+            if (articles[0]["urlToImage"] == null || articles[0]["title"] == null || articles[0]["description"] == null || articles[0]["urlToImage"] == undefined || articles[0]["title"] == undefined || articles[0]["description"] == undefined) {
+                return;
+            }
+            let newsTitle, newsDescr;
+            let dot = `...`;
+            if (articles[0]["title"].length < 40) {
+                newsTitle = articles[0]["title"];
+                newsDescr = articles[0]["description"];
+                if (newsDescr.length > 100) {
+                    newsDescr = articles[0]["description"].substring(0, 100);
+                    newsDescr = addStr(newsDescr, 100, dot);
+                }
+            }
+            else if (articles[0]["title"].length < 80) {
+                newsTitle = articles[0]["title"];
+                newsDescr = articles[0]["description"];
+                if (newsDescr.length > 50) {
+                    newsDescr = articles[0]["description"].substring(0, 55);
+                    newsDescr = addStr(newsDescr, 55, dot);
+                }
+            }
+            else {
+                newsTitle = articles[0]["title"];
+                newsDescr = ``;
+            }
+            newsHtml2 = ` <a href="${articles[0]["url"]}" style="text-decoration:none;">
+                                        <div style="background-color: white; width: auto;" id="newsContainerleft1IdcardSize">
+                                        <img src="${articles[0]["urlToImage"]}" id="newsContainerleft1IdcardSizeImg">
+                                            <div class="card-body">
+
+                                            <h5 class="card-title" id="cardTitleLeft1">${newsTitle}</h5>
+                                        
+
+                                            </div> 
+                                            </div>
+                                                </a>`
+            newsContainerleft1.innerHTML = newsHtml2;
+
+            //these is for left 2
+            for (let i = 1; i <= 3; i++) {
+                if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                    return;
+                }
+                let newsTitle, newsDescr;
+                let dot = `...`;
+                if (articles[i]["title"].length < 32) {
+                    newsTitle = articles[i]["title"];
+                    newsDescr = articles[i]["description"];
+                    if (newsDescr.length > 100) {
+                        newsDescr = articles[i]["description"].substring(0, 100);
+                        newsDescr = addStr(newsDescr, 100, dot);
+                    }
+                }
+                else if (articles[i]["title"].length < 80) {
+                    newsTitle = articles[i]["title"];
+                    newsDescr = articles[i]["description"];
+                    if (newsDescr.length > 50) {
+                        newsDescr = articles[i]["description"].substring(0, 50);
+                        newsDescr = addStr(newsDescr, 50, dot);
+                    }
+                }
+                else {
+                    newsTitle = articles[i]["title"];
+                    newsDescr = ``;
+                }
+
+
+                newsHtml3 += `<div style="background-color: white; height: 108px; width: auto; margin-bottom: 15px;">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">${newsTitle}</h5>
+                                                                        <p class="card-text upCardText" style="font-size:15px; color:black;">${newsDescr}</p>
+                                                                    </div>
+                                                                </div>`
+            }
+            newscontainerleft2.innerHTML = newsHtml3;
+            //these is for main container
+
+            for (i = 4; i < 24; i++) {
+                if (articles[i]["urlToImage"] == null || articles[i]["title"] == null || articles[i]["description"] == null || articles[i]["urlToImage"] == undefined || articles[i]["title"] == undefined || articles[i]["description"] == undefined) {
+                    return;
+                }
+                let element = articles[i];
+                newsHtml1R += `
+                    <a href="${element["url"]}" id="containerLink">
+
+<div class="row my-3" style="background-color: white; height: 80px; overflow:hidden;">
+                <div class="col-4" style="padding:0 0 0 0;">
+                    <img src="${element["urlToImage"]}"
+                        class="img-fluid" style="height: 100%; overflow:hidden;" alt="...">
+                </div>
+                <div class="col-8">
+                        <h6 class="card-title my-2">${element["title"]}</h6>
+                    
+
+                </div>
+            </div>
+            </a>
+                    `;
+                newsHtml1 += `
+                    <a href="${element["url"]}" style="text-decoration:none;">
+                                                    <div class="card mb-3 my-3 midCard" id="midCardWidth" style="max-width: auto;">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 imgContainer1" style="overflow: hidden;">
+                                                                <div class="imgContainer">
+                                                                    <img src="${element["urlToImage"]}"
+                                                                        class="img-fluid upCardImg" alt="...">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-8">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">${element["title"]}</h5>
+                                                                    <p class="card-text upCardText" style="font-size:15px; color:black;">${element["description"]}</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                    
+                                    `
+            }
+            news.innerHTML = newsHtml1;
+            news1.innerHTML = newsHtml1R;
+
+        }
+        xhr.send();
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        if (pageNumberClick == 1) {
+            pagePrev.style.pointerEvents = "none";
+            pagePrev.style.color = "grey";
+        }
+        else {
+            console.log(count);
+            pagePrev.style.pointerEvents = "auto";
+            pagePrev.style.color = "#0d6efd";
+        }
+        let pageNext = document.getElementById('pageNext');
+        if (pageNumberClick == 4) {
+            console.log('YASHVARDHAN JADHAV');
+            pageNext.style.pointerEvents = "none";
+            pageNext.style.color = "grey"
+        }
+        else {
+            console.log(count);
+            pageNext.style.pointerEvents = "auto";
+            pageNext.style.color = "#0d6efd";
+        }
+
+    }
+    let searchGlobalTopic = document.getElementById('searchGlobalTopic');
+    let searchGlobalBtn = document.getElementById('searchGlobalBtn');
+    searchGlobalBtn.addEventListener('click', searchGlobalFunction);
+    function searchGlobalFunction() {
+        let globalSearchText = searchGlobalTopic.value.toLowerCase();
+        localStorage.setItem('globalSearchText', globalSearchText);
+        console.log(globalSearchText);
+    }
+    let searchGlobalTopic1 = document.getElementById('searchGlobalTopic1');
+    let searchGlobalBtn1 = document.getElementById('searchGlobalBtn1');
+    searchGlobalBtn1.addEventListener('click', searchGlobalFunction1);
+    function searchGlobalFunction1() {
+        let globalSearchText1 = searchGlobalTopic1.value.toLowerCase();
+        localStorage.setItem('globalSearchText', globalSearchText1);
+        console.log(globalSearchText);
+    }
+
+    function navFunc(id) {
+        let navTopic = id.substring(8, id.length);
+        localStorage.setItem('navTopic', navTopic);
+    }
+                //f0bf0c82cc5f45f29dda5cbe53a15521 vishal
+                //67b4af3104714f318609185d1ca9e8c6 chessprinters
+                //f67f25d95383493689f7e93eccee1028 yashvardhan
+</script>
+
+</html>
